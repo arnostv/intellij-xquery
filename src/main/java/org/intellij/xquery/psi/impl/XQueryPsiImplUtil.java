@@ -196,9 +196,8 @@ public class XQueryPsiImplUtil {
             @Override
             public String getPresentableText() {
                 String name = element.getFunctionName() != null ? element.getFunctionName().getText() : "";
-                String tailText = (element.getParamList() != null ? element.getParamList().getText() : "") + " as ";
-                String typeText = element.getSequenceType() != null ? element.getSequenceType()
-                        .getText() : "item()*";
+                String tailText = (element.getParamList() != null ? element.getParamList().getText() : "");
+                String typeText = element.getSequenceType() != null ? " as " + element.getSequenceType() .getText() : "";
                 return StringUtils.compressWhitespaces(name + tailText + typeText);
             }
 
