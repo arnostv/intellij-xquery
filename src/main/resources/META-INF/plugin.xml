@@ -93,7 +93,10 @@
         <localInspection enabledByDefault="false" shortName="NamespacePrefixFromFileName" groupName="XQuery"
                          displayName="Namespace prefix derived from file name"
                          implementationClass="org.intellij.xquery.inspection.namespaceprefix.NamespacePrefixFromFileName"/>
-        
+        <localInspection enabledByDefault="false" shortName="NamespaceSameInImportAsInDeclaration" groupName="XQuery"
+                         displayName="Namespace prefix in module import should be same as in module declaration"
+                         implementationClass="org.intellij.xquery.inspection.namespaceprefix.NamespaceSameInImportAsInDeclaration"/>
+
         <codeInsight.parameterInfo language="XQuery" implementationClass="org.intellij.xquery.completion.function.parameters.XQueryParameterInfoHandler" />
         <lang.documentationProvider language="XQuery" implementationClass="org.intellij.xquery.documentation.XQueryDocumentationProvider"/>
         <projectConfigurable instance="org.intellij.xquery.settings.XQueryConfigurable"/>
